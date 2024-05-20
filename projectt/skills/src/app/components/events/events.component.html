@@ -1,0 +1,47 @@
+<div class="h">
+    <h1>All Events</h1>
+</div>
+
+<div class="all">
+    <div class="post-module" *ngFor="let event of events; let i = index">
+        <div class="thumbnail">
+          <div class="date">
+            <div class="day">{{ event.date }}</div>
+          </div>
+          <img [src]="event.imageUrl" alt="Event Image">
+        </div>
+        <div class="post-content">
+          <p class="title">{{ event.title }}</p>
+          <p class="location"><i class="fa fa-map-marker"></i>{{ event.location }}</p>
+        </div>
+        <div *ngIf="isEditing && editedEventIndex === i">
+            <input type="text" [(ngModel)]="newEvent.title" placeholder="Title">
+            <input type="text" [(ngModel)]="newEvent.date" placeholder="Date">
+            <input type="text" [(ngModel)]="newEvent.location" placeholder="Location">
+            <input type="file" (change)="onFileSelected($event)">
+            <button (click)="saveEditedEvent()">Save</button>  
+             <button (click)="cancelEdit()">Cancel</button>
+        </div>
+        <div *ngIf="!isEditing || editedEventIndex !== i">
+            <button (click)="editEvent(i)">Edit</button>
+            <button (click)="deleteEvent(event.id)">Delete</button>
+        </div>
+    </div>
+    <div class="l">
+        <a href="events" class="previous"><i class="fa fa-angle-left"></i></a>
+        <a href="events" class="btn active">1</a>
+        <a href="events" class="btn">2</a>
+        <a href="events" class="btn">3</a>
+        <a href="events" class="btn">4</a>
+        <a href="events" class="btn">5</a>
+        <a href="events" class="next"><i class="fa fa-angle-right"></i></a>
+    </div>
+    <div>
+        <h2>Add New Event</h2>
+        <input type="text" [(ngModel)]="newEvent.title" placeholder="Title">
+        <input type="text" [(ngModel)]="newEvent.date" placeholder="Date">
+        <input type="text" [(ngModel)]="newEvent.location" placeholder="Location">
+        <input type="file" (change)="onFileSelected($event)">
+        <button (click)="addEvent()" class="button">Add Event</button>
+    </div>
+</div>

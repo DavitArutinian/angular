@@ -1,0 +1,178 @@
+.h {
+    margin-left: 180px;
+    margin-top: 180px;
+    position: absolute;
+    display: flex;
+}
+
+.all {
+    margin: 420px 80px 60px 80px;
+    display: flex;
+    flex-wrap: wrap;
+    bottom: 0;
+    
+}
+
+.post-module {
+    width: calc(20%); /* Adjust width to fit 4 modules in a row with margins */
+    margin-bottom: 20px; 
+    margin-left: 20px; /* Add space between modules */
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #000000;
+
+}
+
+.post-module:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+}
+
+.thumbnail img {
+    display: block;
+    width: 100%;
+    transition: all 0.3s;
+}
+
+.post-module:hover .thumbnail img {
+    transform: scale(1.1);
+}
+
+.date {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #FFC224;
+    box-shadow: 4px 4px 0px #3D3D3D;
+    color: #000000;
+    padding: 10px;
+    border-radius: 30px;
+    font-size: 12px;
+    text-align: center;
+    border: 1px solid #000000;
+margin-top: -10px;
+    margin-left: -10px;
+}
+
+.date .day {
+    font-size: 18px;
+    font-weight: bold;
+
+}
+
+.post-content {
+    background: #fff;
+}
+
+.title {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.location {
+    color: #6D6C80;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.location i {
+    margin-right: 5px;
+}
+
+.l {
+    width: 100%;
+    margin-top: 20px; /* Add space at the top */
+    text-align: center;
+}
+
+.l a {
+    font-family: "Open Sans", sans-serif;
+    background: #ccc;
+    padding: 10px 16px;
+    margin: 0 5px; /* Add space between pagination links */
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    border-radius: 20px;
+    transition: 0.3s;
+}
+
+.l a:hover {
+    background: #ADADAD;
+    transition-duration: 0.3s;
+}
+
+.l .active {
+    background: #5751E1 !important;
+}
+
+
+.button-container {
+    display: flex;
+    justify-content: space-between; /* Add space between buttons */
+}
+
+.edit-btn,
+.delete-btn {
+    background-color: #FFC224;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #3D3D3D;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #000;
+    transition: background-color 0.1s ease, padding 0.1s ease; /* Smooth transition for padding and background color */
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 20px; /* Adjust padding as needed */
+}
+
+.edit-btn:hover,
+.delete-btn:hover {
+    background-color: #28a745; /* Change color on hover */
+    color: #161439;
+}
+
+
+
+/* Style for the input fields */
+input[type="text"], input[type="file"] {
+    width: 100%; /* Make the inputs fill the container */
+    padding: 8px; /* Adjust as needed */
+    margin-bottom: 10px; /* Adjust as needed */
+    border: 1px solid #ccc; /* Add border */
+    border-radius: 4px; /* Add border radius */
+    box-sizing: border-box; /* Ensure padding and border are included in width */
+
+}
+
+/* Style for the button */
+button {
+    padding: 5px;
+margin-left: 40px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #FFC224;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #3D3D3D;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #000;
+    margin-top: 20px;
+    
+}
+
+/* Hover effect for the button */
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}

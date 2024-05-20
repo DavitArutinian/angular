@@ -1,0 +1,11 @@
+<div class="h">
+  <h1>{{ userName }}</h1>
+  <div class="sign-in-btn">
+    <button *ngIf="userName !== 'Welcome'" (click)="logout()">Logout →</button>
+  </div>
+</div>
+<div class="all">
+
+</div>
+  <router-outlet></router-outlet>
+  

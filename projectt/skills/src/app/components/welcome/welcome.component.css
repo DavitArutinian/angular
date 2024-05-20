@@ -1,0 +1,44 @@
+.h {
+    margin-left: 180px;
+    margin-top: 180px;
+    position: absolute;
+    display: flex;
+    flex-direction: column; /* Add this to stack children vertically */
+    align-items: center; /* Center the content horizontally */
+    z-index: 100;
+  }
+  .all {
+    margin: 420px 80px 60px 80px;
+
+   
+    
+}
+  
+  .sign-in-btn {
+    width: 100%;
+    display: flex;
+    justify-content: center; /* Center the button horizontally */
+    align-items: center; /* Center the button vertically */
+    margin-top: 20px;
+  }
+  .sign-in-btn button {
+    width: 100%; /* Make the button take the full width of the container */
+    max-width: 300px; /* Optional: Set a max width to control the button size */
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #FFC224;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #3D3D3D;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #000;
+    transition: background-color 0.1s ease, padding 0.1s ease; /* Smooth transition for padding and background color */
+  }
+  
+  .sign-in-btn button:hover {
+    background-color: #28a745;
+    color: #161439;
+    padding: 16px; 
+  }
+  

@@ -1,0 +1,86 @@
+<div class="h">
+    <h1>Student SignUp</h1>
+  </div>
+  <div class="login-container">
+    <h1>Create Your Account</h1>
+    <p>Hey there! Ready to join the party? We just need a few details from you to get started. Let's do this!</p>
+    <div class="social-login">
+      <button type="button" class="google-btn">
+        <i class="fab fa-google"></i> Continue with Google
+      </button>
+    </div>
+    <div class="or-divider">
+      <hr>
+      <p>or</p>
+      <hr>
+    </div>
+  
+    <form [formGroup]="regForm" (ngSubmit)="submit()">
+      <div class="flex-container">
+        <div class="input-group">
+          <label for="FirstName">First Name:</label>
+          <input type="text1" id="FirstName" formControlName="firstName" placeholder="First Name" >
+          <div *ngIf="regForm.get('firstName')?.touched && regForm.get('firstName')?.invalid || submitted&& regForm.get('firstName')?.invalid" class="error-container">
+            <div *ngIf="regForm.get('firstName')?.errors?.['required']" class="error-message">
+                First Name is required 
+            </div>
+        </div>  
+        </div>
+        <div class="input-group">
+          <label for="LastName">Last Name:</label>
+          <input type="text2" id="LastName" formControlName="lastName" placeholder="Last Name" >
+          <div *ngIf="regForm.get('lastName')?.touched && regForm.get('lastName')?.invalid || submitted&& regForm.get('lastName')?.invalid" class="error-container">
+            <div *ngIf="regForm.get('lastName')?.errors?.['required']" class="error-message">
+                Last Name is required 
+            </div>
+        </div>  
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" formControlName="email" placeholder="Email" >
+        <div *ngIf="regForm.get('email')?.touched && regForm.get('email')?.invalid || submitted&& regForm.get('email')?.invalid" class="error-container">
+          <div *ngIf="regForm.get('email')?.errors?.['required']" class="error-message">
+              Email is required 
+          </div>
+          <div *ngIf="regForm.get('email')?.errors?.['email']" class="error-message">
+              Invalid Email
+         </div>  
+      </div>  
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" formControlName="password" placeholder="Password" >
+        <div *ngIf="regForm.get('password')?.touched && regForm.get('password')?.invalid || submitted&& regForm.get('password')?.invalid" class="error-container">
+          <div *ngIf="regForm.get('password')?.errors?.['required']" class="error-message">
+              Password is required 
+          </div>
+          <div *ngIf="regForm.get('password')?.errors?.['minlength']" class="error-message">
+            Password must be at least 4 characters long
+          </div>
+      </div>  
+      </div>
+      <div class="form-group">
+        <label for="Conf_Password">Confirm Password</label>
+        <input type="password" id="Conf_Password" formControlName="confirmPassword" placeholder="Confirm Password" >
+        <div *ngIf="regForm.get('confirmPassword')?.touched && regForm.get('confirmPassword')?.invalid || submitted&& regForm.get('confirmPassword')?.invalid" class="error-container">
+          <div *ngIf="regForm.get('confirmPassword')?.errors?.['required']" class="error-message">
+              ConfirmPassword is required 
+          </div>
+          <div *ngIf="submitted || regForm.get('confirmPassword')  && regForm.errors?.['mismatch']" class="error-message">
+            Passwords do not match
+        </div>
+      </div>  
+      </div>
+      <div class="sign-in-btn">
+        <button type="submit">Sign Up →</button>
+      </div>
+      <div *ngIf="successMessage" class="success-message">
+        {{ successMessage }}
+      </div>
+      <div class="signup-link">
+        Already have an account? <a href="login">Sign In</a>
+      </div>
+    </form>
+
+  

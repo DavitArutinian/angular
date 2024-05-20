@@ -1,0 +1,21 @@
+.footer {
+  background-color: #1c1a4a;
+  padding: 5px 6px;
+  margin-top: 200%;
+  color: #8c9ab4;
+  display: flex;
+  width: 99.75%; 
+  position:fixed;
+  left: -8px;
+  bottom:0;
+}
+
+.data{
+    text-align: right;
+    margin-left: 16px;
+}
+
+.term{
+margin-left: auto;
+margin-right: 20px;
+}

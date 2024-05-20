@@ -1,0 +1,100 @@
+.error {
+    display: flex;
+    justify-content: center; /* Horizontally center the icon */
+    align-items: center; /* Vertically center the icon */
+    height: 150vh; /* Make the container full height of the viewport */
+  }
+  .all{
+    margin: 0px 0px 220px 0px;
+  }
+  
+  /* Adjust the width and height of the SVG if needed */
+  .error svg {
+    width: 448px;
+    height: 323px; /* Maintain aspect ratio */
+  }
+  
+  .error2 {
+    display: flex;
+    justify-content: center; /* Horizontally center the icon */
+    align-items: center; /* Vertically center the icon */
+    height: 10vh;
+    margin-top: -400px    ; /* Set the container height to 10% of the viewport height */
+  }
+  
+  .error3 {
+    display: flex;
+    justify-content: center; /* Horizontally center the icon */
+    align-items: center; /* Vertically center the icon */
+    height: 10vh; /* Set the container height to 5% of the viewport height */
+
+  }
+  .button {
+    display: flex;
+    justify-content: center; /* Horizontally center the button */
+    align-items: center; /* Vertically center the button */
+    position: absolute;
+    top: 13px;
+    left: 50%; /* Center the button horizontally */
+    transform: translateX(-50%); /* Center the button horizontally */
+    width: 300px; /* Adjust the width as needed */
+    height: 60px; /* Adjust the height as needed */
+
+  }
+  
+  .button button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1700px;
+    background-color: #5751E1;
+    color: #FFFFFF; /* Text color set to white */
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 18px; /* Increased font size */
+    cursor: pointer;
+    width: 100%; /* Take up full width of the container */
+    height: 100%; /* Define a fixed height for the button */
+    border-radius: 50px; /* Rounded corners */
+    box-shadow: 2px 3px 0px #18173b;
+    border: none; /* Remove default border */
+    padding: 10px 20px; /* Add some padding for better spacing */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions for hover effects */
+  }
+  
+  
+  .button button:hover {
+    background-color: #3e3ab3; /* Slightly darker shade for hover effect */
+    box-shadow: 4px 6px 0px #0f0f2b; /* Slightly larger shadow on hover */
+  }
+  
+  
+  .button button:hover {
+    display: inline-block;
+    padding: 5px 5px;
+    color: #000;
+    background-color: #28a745;
+    color: #161439;
+    width: 100%;
+    padding: 16px; 
+    box-shadow: 4px 4px 0px #3D3D3D;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    
+  }
+  
+  .h{
+    margin-left: 180px;
+    margin-top: 180px;
+    position: absolute;
+    display: flex;
+    
+  }
+  
+  .go {
+    color: #FFFFFF;
+    text-decoration: none;
+  }

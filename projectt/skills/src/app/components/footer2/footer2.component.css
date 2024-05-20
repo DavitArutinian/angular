@@ -1,0 +1,186 @@
+/* Importing Google font - Open Sans */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  
+}
+
+h4 {
+  color: #fff;
+}
+
+hr {
+  background: #5751E1;
+  color: #5751E1;
+  width: 30px;
+  height: 4px;
+  border-color: #5751E1;
+  border-radius: 2px 0 0 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+
+  flex-direction: column;
+  min-height: auto;
+
+
+  /* Ensure the footer stays at the bottom */
+}
+
+.container {
+  flex: 1;
+  display: flex;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.footer {
+
+  width: 100%;
+  background: #06042E;
+  border-radius: 6px;
+  padding: 15px 20px;
+  color: white;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  left: 0;
+ /* Push footer to the bottom */
+}
+
+.footer {
+  display: flex;
+  width: 101.15%;
+  background: #06042E;
+  border-radius: 6px;
+  padding: 15px 20px;
+  color: white;
+  justify-content: center;
+  margin: -7.8px;
+ bottom: 0;
+
+
+}
+
+
+.footer .footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 3.5rem;
+  width: 100%;
+  max-width: 1200px;
+  padding: 60px 0;
+}
+
+.footer .footer-col {
+  flex: 1;
+  min-width: 200px;
+}
+
+.footer .footer-col h4 {
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 400;
+}
+
+.footer .links {
+  margin-top: 20px;
+}
+
+.footer .links li {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.footer .links li a {
+  text-decoration: none;
+  color: #bfbfbf;
+}
+
+.footer .links li a:hover {
+  color: #ffffff;
+}
+
+.footer p {
+  margin: 20px 0;
+  color: #bfbfbf;
+  max-width: 300px;
+}
+
+.footer form {
+  display: flex;
+  gap: 5px;
+}
+
+.footer input {
+  height: 40px;
+  border-radius: 6px;
+  background: none;
+  width: 100%;
+  outline: none;
+  border: 1px solid #7489C6;
+  caret-color: #fff;
+  color: #fff;
+  padding-left: 10px;
+}
+
+.footer input::placeholder {
+  color: #ccc;
+}
+
+.footer button {
+  background: #fff;
+  outline: none;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+}
+
+.footer button:hover {
+  background: #cecccc;
+}
+
+.footer .icons {
+  display: flex;
+  margin-top: 30px;
+  gap: 30px;
+  cursor: pointer;
+}
+
+.footer .icons i {
+  color: #afb6c7;
+}
+
+.footer .icons i:hover {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+  .footer .footer-row {
+    padding: 20px;
+    gap: 1rem;
+  }
+  .footer form {
+    display: block;
+  }
+  .footer form input,
+  .footer form button {
+    width: 100%;
+  }
+  .footer form button {
+    margin: 10px 0 0 0;
+  }
+}

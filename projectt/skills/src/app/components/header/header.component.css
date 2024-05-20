@@ -1,0 +1,109 @@
+.header {
+    position: absolute;
+    height: 46.5px;
+    width: 100%;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #161439;
+    color: #e6eaef;
+    font-family: 'Inter';
+  }
+  
+  .fa-map-marker-alt {
+    left: 135px;
+    top: calc(50% - 10px);
+    opacity: 0.6;
+  }
+  
+  .address {
+    position: absolute;
+    width: 205.2px;
+    height: 24.5px;
+    left: 55px;
+    top: 15px;
+    font-weight: 500;
+    font-size: 14px;
+  }
+  
+  .fa-envelope {
+    left: 390.84px;
+    top: calc(50% - 7px);
+    opacity: 0.6;
+    margin-right: 5px;
+  }
+
+  .email {
+    position: absolute;
+    width: 933.06px;
+    height: 24.5px;
+    left: 280.84px;
+    top: 15px;
+    font-weight: 500;
+    font-size: 14px;  
+  }
+  
+  .phone {
+    position:absolute;
+    height: 24.5px;
+    left: 1000.52px; 
+    top: 15px;
+    color:#ffffff;
+  }
+  
+  .fa-phone {
+    left: 40%;
+    top: 40%;
+    opacity: 0.6;
+
+  }
+  
+  .follow-us {
+    position: absolute;
+    height: 24.5px;
+    left: 1210.17px;
+    top: 15px;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    color: #ffffff;
+  }
+  /* Facebook */
+  .symbol-facebook {
+    width: 11.07px;
+    margin-left: 8px;
+    height: 14px;
+    left: 1674px;
+    top: 16px;
+    color: #ffffff;
+  }
+  /* Twitter */
+  .symbol-twitter {
+    width: 16.39px;
+    margin-left: 8px;
+    height: 14px;
+    left: 1694.75px;
+    top: 16px;
+    color: #ffffff;
+  }
+  /* Instagram */
+  .symbol-instagram {
+    width: 14.62px;
+    margin-left: 8px;
+    height: 14px;
+    left: 1720.75px;
+    top: 16px;
+    color: #ffffff;
+  }
+  /* LinkedIn */
+  .symbol-linkedin {
+    width: 14.62px;
+    margin-left: 8px;
+    height: 14px;
+    left: 1745px;
+    top: 16px;
+    color: #ffffff;
+  }
+  
+
+  

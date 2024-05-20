@@ -1,0 +1,220 @@
+
+
+.login-container {
+
+    width: 500px;
+    padding: 25px;
+    margin: 10px auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #ebebeb;
+    margin-top: 420px;
+    margin-bottom: 80px;
+
+}
+
+.login-container h1 {
+    font-family: "Poppins";
+    font-size: 35px;
+    font-weight: 600;
+    color: #161439;
+}
+
+.login-container p {
+    font-family: "Inter";
+    font-size: 16px;
+    font-weight: 400;
+    color: #6D6C80;
+    margin-bottom: 20px;
+}
+
+.social-login {
+    margin-bottom: 20px;
+}
+
+
+.google-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #ffffff;
+    color: #474747;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+.h{
+    margin-left: 180px;
+margin-top: 180px;
+position: absolute;
+display: flex;
+
+}
+
+.form-group label {
+    font-size: 16px;
+    font-weight: 600;
+    color: #161439;
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input[type="email"],
+form input[type="password"]{
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.forgot-password{
+    font-size: 14px;
+    font-weight: 400;
+    color: #5751e1;
+    text-decoration: none;
+    text-align: right;
+    margin-top: -40px;
+    cursor: pointer;
+}
+.forgot-password a:hover {
+    text-decoration: underline;
+
+}
+
+.sign-in-btn button {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #FFC224;
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #3D3D3D;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #000;
+    margin-top: 20px;
+}
+.sign-in-btn button:hover {
+    display: inline-block;
+    padding: 5px 5px;
+    color: #000;
+    background-color: #28a745;
+    color: #161439;
+    width: 100%;
+    padding: 16px; 
+    box-shadow: 4px 4px 0px #3D3D3D;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 50px; 
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    border: 2px solid #000000;
+}
+.signup-link {
+    margin-top: 10px;
+    text-align: center;
+    margin-top: 20px;
+    
+}
+
+.signup-link a {
+    font-size: 14px;
+    font-weight: 400;
+    color: #5751e1;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+
+}
+
+ 
+  
+  .login-container form .form-group input[type="checkbox"] {
+    margin-right: 6px;
+    margin-top: -100px;
+    cursor: pointer;
+  }
+  
+  .login-container form .form-group input[type="checkbox"] + label {
+    font-size: 16px;
+    font-weight: 400;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 2px;
+    cursor: pointer;
+  }
+  
+
+  .or-divider {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.or-divider hr {
+    flex-grow: 1;
+    border: none;
+    border-top: 1px solid #ccc;
+}
+
+.or-divider p {
+    margin: 0 10px;
+    font-weight: bold;
+    color: #161439;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: Inter;
+}
+
+  
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-top: 20px;
+    text-align: center; 
+  }
+
+.error-message {
+    color: red; 
+    text-align: center;
+}
+
+.error-messag {
+    background-color: #f8d7da; 
+    color: red;
+    border: 1px solid #f5c6cb; 
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-top: 20px;
+    text-align: center; 
+}
+
+.success-message {
+    background-color: #d4edda;
+    color: #155724;
+    border: 1px solid #c3e6cb;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 0 auto;
+    max-width: 400px;
+    margin-top: 20px;
+    text-align: center; 
+  }
